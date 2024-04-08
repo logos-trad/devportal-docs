@@ -6,6 +6,10 @@ on:
     - cron: '1 18 * * *'
   # Allows manual workflow run (must in default branch to work)
   workflow_dispatch:
+  push:
+    branches:
+    - 'main'
+    - 'docs*'
 
 jobs:
   build:
