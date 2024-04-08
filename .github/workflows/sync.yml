@@ -24,6 +24,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         # optional: set the branch to checkout,
+        branches: main,docs/from-gitbook
         # sync action checks out your 'target_sync_branch' anyway
         ref:  docs/from-gitbook
         # REQUIRED if your upstream repo is private (see wiki)
