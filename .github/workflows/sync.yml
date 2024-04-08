@@ -15,6 +15,6 @@ jobs:
         uses: logos-trad/devportal-docs@v0.0.1
         with: 
           upstream_repo: https://github.com/pagopa/devportal-docs
-          upstream_branch:    docs
-          downstream_branch:  docs
+          upstream_branch:    docs/from-gitbook
+          downstream_branch:  docs/from-gitbook
           token: ${{ secrets.PAT_TOKEN }}
