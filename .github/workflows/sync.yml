@@ -1,0 +1,20 @@
+name: Sync Upstream
+
+# This runs every day on 1801 UTC
+on:
+  schedule:
+    - cron: '1 18 * * *'
+  # Allows manual workflow run (must in default branch to work)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Sync to Upstream Repository
+        uses: logos-trad/devportal-docs@v0.0.1
+        with: 
+          upstream_repo: https://github.com/pagopa/devportal-docs
+          upstream_branch:    docs
+          downstream_branch:  docs
+          token: ${{ secrets.PAT_TOKEN }}
