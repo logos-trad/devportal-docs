@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Sync to Upstream Repository
-        uses: logos-trad/devportal-docs@v4.1.2
+        uses: logos-trad/devportal-docs
         with: 
           upstream_repo: https://github.com/pagopa/devportal-docs
           upstream_branch:    docs/from-gitbook
